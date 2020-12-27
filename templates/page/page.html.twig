@@ -1,0 +1,20 @@
+{% extends 'layouts/site_layout.html.twig' %}
+
+{% block title %}Hello Contacts!{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="mt-5">{{ controller_name }}</h1>
+        <p>{{ page_name }}</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vehicula mi ligula, et eleifend ante feugiat nec. Quisque ullamcorper interdum odio, vitae cursus ex vestibulum vel. Nullam faucibus neque sed augue faucibus, et ornare risus ultricies. Nulla maximus sapien id quam sodales aliquet. Aenean at ultricies arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam tincidunt felis nunc, et malesuada leo feugiat eget. Suspendisse sagittis velit at augue sollicitudin viverra. Duis euismod ac purus in vestibulum. Vivamus in diam in enim ultrices rhoncus at et mi. Curabitur pellentesque felis quam, id auctor libero commodo at. Duis posuere turpis sollicitudin mi placerat lacinia. Nullam luctus iaculis fermentum. In volutpat consectetur nulla, non dignissim erat lacinia et. Aliquam pulvinar dignissim tellus eget consectetur.</p>
+    </div>
+{% endblock %}

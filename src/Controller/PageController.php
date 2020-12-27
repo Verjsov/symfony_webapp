@@ -23,6 +23,20 @@ class PageController extends AbstractController
     {
         return $this->render('page/about.html.twig', $this->getPageContent());
     }
+    /**
+     * @Route("/contacts", name="contacts_page")
+     */
+    public function contacts (): Response
+    {
+        return $this->render('page/contacts.html.twig', $this->getPageContent());
+    }
+    /**
+     * @Route("/page", name="page_page")
+     */
+    public function page (): Response
+    {
+        return $this->render('page/page.html.twig', $this->getPageContent());
+    }
 
     /**
      * @return array
